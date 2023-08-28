@@ -6,13 +6,25 @@
     <title>workout app</title>
 </head>
 <body>
+    <script src="/html-boilerplate/script.js"></script>
+
+    <style src="/html-boilerplate/style.css"></style>
+
     <label for="routine-select">Choose routine :</label>
 
-    <select name="routines" id="routine-select">
-        <option value="">-Select your gains-</option>
-        <option value="push">Push</option>
-        <option value="pull">Pull</option>
-        <option value="legs">Legs</option>
-    </select>
+   <form name="form1" id="form1" action="/action_page.php">
+<select id="ddl" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">
+    <option value="howyougain">How you gain</option>
+    <option value="push">Push</option>
+    <option value="pull">Pull</option>
+    <option value="legs">Legs</option>
+</select>
+
+<select id="ddl2">
+    <option>How you gain</option>
+</select>
+
+        <br><br>
+   </form>
 </body>
 </html>
