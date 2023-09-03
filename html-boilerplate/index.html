@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>workout app</title>
-</head>
-<body>
-    <script src="/html-boilerplate/script.js"></script>
-
     <style src="/html-boilerplate/style.css"></style>
 
-    <label for="routine-select">Choose routine :</label>
+</head>
+<body>
+  <label for="routine-select">Choose routine :</label>
 
-   <form name="form1" id="form1" action="/action_page.php">
-<select id="ddl" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">
+   <form name="form1" id="form1">
+<select id="ddl">
     <option value="howyougain">How you gain</option>
     <option value="push">Push</option>
     <option value="pull">Pull</option>
@@ -23,8 +21,9 @@
 <select id="ddl2">
     <option>How you gain</option>
 </select>
-
-        <br><br>
+<input type="submit">Submit</input>
+        
    </form>
+   <script src="/html-boilerplate/script.js"></script>
 </body>
 </html>
